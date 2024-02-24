@@ -1,0 +1,368 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+header{
+    /* position: fixed; */
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header .navbar ul li 
+{
+    display:inline-block;
+    list-style: none;
+    text-decoration: none;
+}
+ header .navbar ul li a
+{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    color: white;
+}
+#logo-name
+{
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(10, 237, 237);
+}
+
+header .navbar ul li :hover
+{
+    border-bottom: 1px solid rgb(10, 237, 237);
+    transition: 1s;
+}
+.main-content{
+    height: 80vh;
+    /* ackground-color: white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.photo
+{
+    border: 3px solid rgb(10, 237, 237);
+    border-radius: 50%;
+}
+.text
+{
+    width: 30%;
+}
+.button1
+{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid rgb(10, 237, 237);
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.button1:hover
+{
+    background-color: rgb(10, 237, 237);
+    color: black;
+}
+.container
+{
+   padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    color: black;
+    justify-content: space-evenly;
+}
+.about-me-text
+{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blackbox
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skill-container
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+.skill
+{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    text-align: center;
+    margin: 22px;
+    border-radius: 10px;
+}
+.skill:hover
+{
+   border: 2px solid  rgb(10, 237, 237);
+   background-color: rgb(26, 26, 26);   
+}
+#whitebox .container .about-me-text ul
+{
+    font-size: 18px;
+}
+
+#whitebox .container .about-me-text ul b
+{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+
+}
+
+.whitebox .container
+{
+   padding: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: white;
+    color: black;
+    justify-content: space-evenly;
+}
+.experience
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.work-desc
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 40px;
+}
+.work-desc:hover
+{
+   background-color: rgb(212, 212, 212);
+}
+
+.experience .work-image img
+{
+    border-radius: 50%;
+    justify-self: center;
+}
+
+.work-desc
+{
+    padding: 20px;
+}
+
+.blackbox input
+{
+    width: 45%;
+    height: 40px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.contact-logo a{
+    margin: 20px;
+    text-decoration: none;
+    font-size: 40px;
+    color:rgb(10, 237, 237);
+    align-items: end;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .navbar {
+      margin-top: 20px;
+      justify-self: space-evenly;
+    }
+    
+    .main-content {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+    
+    .text {
+      width: 80%;
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .about-me-img {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .about-me-text {
+      width: 80%;
+      text-align: center;
+    }
+    
+    .skill-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .skill {
+      width: 80%;
+      margin: 20px 0;
+    }
+    
+    .experience .work-image {
+      width: 30%;
+    }
+    
+    .work-desc {
+      width: 65%;
+      padding: 10px;
+    }
+    
+    .blackbox input {
+      width: 80%;
+    }
+  }
+  @media only screen and (min-width: 555px) and (max-width:768px) {
+    .text {
+      width: 100%;
+    }
+    
+    .about-me-img img,
+    .about-me-text {
+      width: 100%;
+    }
+    
+    .skill {
+      width: 100%;
+    }
+    
+    .experience .work-image,
+    .work-desc {
+      width: 100%;
+    }
+
+    .contactt
+    {
+      display: flex;
+      flex-direction: column;
+    }
+    .button2
+    {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .contact-logo
+    {
+      display: flex;
+      justify-content: center;
+
+    }
+    #contactme
+    {
+      display: flex;
+      flex-direction: column-reverse;
+      /* height: 1200px; */
+    }
+  }
+
+
+
+  @media only screen and (max-width: 555px) {
+    .text {
+      width: 100%;
+    }
+    
+    .about-me-img img,
+    .about-me-text {
+      width: 100%;
+    }
+    
+    .skill {
+      width: 100%;
+    }
+    
+    .experience .work-image,
+    .work-desc {
+      width: 100%;
+    }
+
+    .contactt
+    {
+      display: flex;
+      flex-direction: column;
+    }
+    .button2
+    {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .contact-logo
+    {
+      display: flex;
+      justify-content: center;
+
+
+    }
+    #contactme
+    {
+      display: flex;
+      flex-direction: column-reverse;
+      /* height: 1200px; */
+    }
+
+    .navbar
+    {
+      width: 100% ;
+    }
+    header .navbar ul li 
+{
+    display:block;
+    text-align: center;
+    padding: 2px;
+    width: 100%;
+    border: 1px solid aqua;
+    list-style: none;
+    text-decoration: none;
+}
+  }
+  
